@@ -1,0 +1,2 @@
+df=master_data.apply(lambda x: x.astype(str).str.lower())
+RMA_count = df[["RMA_Number"]].applymap(lambda x:str.count(x,',')+1)
